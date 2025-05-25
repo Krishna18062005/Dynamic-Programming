@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS3 Exercise 8 - Box Model & Layout Control</title>
+  <style>
+    .eventCard {
+      border: 2px solid #ccc;
+      padding: 15px;
+      margin: 10px;
+      outline: 2px dashed #ff6600; /* highlight selected fields */
+    }
+    .form-field:focus {
+      outline: 2px solid #00cc66;
+    }
+    /* Compare hidden and none */
+    .hidden-element {
+      visibility: hidden;
+    }
+    .removed-element {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="eventCard">
+    <h3>Event Title</h3>
+    <p>Details about the event go here.</p>
+  </div>
+  <form>
+    <input type="text" class="form-field" placeholder="Type here">
+  </form>
+  <p class="hidden-element">This text is hidden but takes up space.</p>
+  <p class="removed-element">This text is removed from the layout.</p>
+</body>
+</html>

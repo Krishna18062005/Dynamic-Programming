@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS3 Exercise 7 - Table Styling</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h2>Event Schedule</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Event</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>10:00 AM</td>
+        <td>Opening Ceremony</td>
+        <td>Main Hall</td>
+      </tr>
+      <tr>
+        <td>11:30 AM</td>
+        <td>Workshop</td>
+        <td>Room A</td>
+      </tr>
+      <tr>
+        <td>01:00 PM</td>
+        <td>Lunch Break</td>
+        <td>Cafeteria</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

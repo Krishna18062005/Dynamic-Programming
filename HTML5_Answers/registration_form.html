@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Registration Form</title>
+  <style>
+    form {
+      max-width: 500px;
+      margin: auto;
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <label>Name:
+      <input type="text" name="name" required placeholder="Your name" autofocus>
+    </label>
+    <label>Email:
+      <input type="email" name="email" required placeholder="Your email">
+    </label>
+    <label>Date:
+      <input type="date" name="date" required>
+    </label>
+    <label>Event Type:
+      <select name="eventType">
+        <option value="">Select an event</option>
+        <option value="workshop">Workshop</option>
+        <option value="concert">Concert</option>
+        <option value="meetup">Meetup</option>
+      </select>
+    </label>
+    <label>Message:
+      <textarea name="message" placeholder="Additional info"></textarea>
+    </label>
+    <output id="formOutput"></output>
+    <button type="submit">Register</button>
+  </form>
+  <script>
+    document.querySelector("form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("formOutput").textContent = "Registration successful!";
+    });
+  </script>
+</body>
+</html>

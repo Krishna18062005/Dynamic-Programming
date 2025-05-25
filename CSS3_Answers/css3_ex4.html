@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS3 Exercise 4 - Color & Background Styling</title>
+  <style>
+    /* Set text color using HEX and RGBA */
+    .text-primary {
+      color: #003366;
+    }
+    
+    .text-semi {
+      color: rgba(0, 51, 102, 0.7);
+    }
+    
+    /* Body background with fallback color and background image */
+    body {
+      background-color: #e0e0e0;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    
+    /* Gradient for section headers */
+    .section-header {
+      background: linear-gradient(90deg, #003366, #66ccff);
+      color: white;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="text-primary">Welcome to the Event Portal</h1>
+  <h2 class="section-header">Featured Event</h2>
+  <p class="text-semi">Details about the featured event go here.</p>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS3 Exercise 3 - Selectors Playground</title>
+  <style>
+    /* Universal selector reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Element selector for all h2 headings */
+    h2 {
+      color: #333;
+      font-family: 'Arial', sans-serif;
+    }
+    
+    /* ID selector for banner */
+    #mainHeader {
+      background-color: #ffcc00;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    /* Class selector for event cards */
+    .eventCard {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin: 10px;
+    }
+    
+    /* Grouping selector for h3 and p */
+    h3, p {
+      color: #555;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="mainHeader">
+    <h2>Community Event Portal</h2>
+  </div>
+  <div class="eventCard">
+    <h3>Event Title</h3>
+    <p>Event description goes here.</p>
+  </div>
+</body>
+</html>

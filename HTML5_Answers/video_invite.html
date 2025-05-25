@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Invite</title>
+</head>
+<body>
+  <video id="promoVideo" width="600" controls oncanplay="videoReady()">
+    <source src="promo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <script>
+    window.onbeforeunload = function() {
+      return "Are you sure you want to leave? The form is incomplete.";
+    };
+    function videoReady() {
+      alert("Video ready to play");
+    }
+  </script>
+</body>
+</html>

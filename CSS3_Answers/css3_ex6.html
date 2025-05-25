@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS3 Exercise 6 - Link and List Styling</title>
+  <style>
+    /* Link styling with pseudo-classes */
+    a:link { color: #0066cc; }
+    a:visited { color: #004080; }
+    a:hover { color: #ff6600; }
+    a:active { color: #cc0000; }
+    
+    /* List styling */
+    ul.custom-list {
+      list-style-type: square;
+      list-style-position: inside;
+      padding: 0;
+    }
+    
+    ul.custom-list li {
+      margin: 5px 0;
+      padding: 5px;
+    }
+    
+    /* Navigation menu without bullets */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <h2>Upcoming Events</h2>
+  <ul class="custom-list">
+    <li>Community Meetup</li>
+    <li>Local Concert</li>
+    <li>Art Festival</li>
+  </ul>
+</body>
+</html>

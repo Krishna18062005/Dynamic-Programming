@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS3 Exercise 10 - Responsive Web Design</title>
+  <style>
+    /* Base styles for navigation */
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+    }
+    nav ul li {
+      margin-right: 15px;
+    }
+    
+    /* Media query for screens smaller than 768px */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+      nav ul li {
+        margin-bottom: 10px;
+        margin-right: 0;
+      }
+      img {
+        width: 100%;
+      }
+      body {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <img src="event.jpg" alt="Event Image" style="max-width:300px;">
+  <p>Responsive design adjustments in place based on screen size.</p>
+</body>
+</html>

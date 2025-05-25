@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Feedback</title>
+  <style>
+    form {
+      max-width: 500px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <label>Phone Number:
+      <input type="text" name="phone" onblur="validatePhone(this.value)">
+    </label>
+    <label>Select Event Fee:
+      <select name="fee" onchange="displayFee(this.value)">
+        <option value="free">Free</option>
+        <option value="paid">Paid</option>
+      </select>
+    </label>
+    <label>Feedback:
+      <textarea name="feedback" onkeydown="countChars(this)"></textarea>
+    </label>
+    <button type="submit" onclick="confirmSubmission()">Submit Feedback</button>
+  </form>
+  <script>
+    function validatePhone(value) {
+      if(value.length < 10) {
+        alert("Phone number seems too short.");
+      }
+    }
+    function displayFee(value) {
+      alert("Selected fee: " + value);
+    }
+    function confirmSubmission() {
+      alert("Feedback submitted successfully!");
+    }
+    function countChars(textarea) {
+      console.log("Characters: " + textarea.value.length);
+    }
+  </script>
+</body>
+</html>

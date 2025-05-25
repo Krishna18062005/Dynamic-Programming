@@ -1,0 +1,29 @@
+/* External Stylesheet: styles.css */
+
+/* Header styles */
+header {
+  background-color: #004080;
+  color: white;
+  padding: 20px;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #0066cc;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Footer styles */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
